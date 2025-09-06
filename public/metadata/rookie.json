@@ -1,0 +1,23 @@
+{
+  "name": "Focus Rookie",
+  "description": "Awarded for completing your first focus session. The beginning of your focus journey.",
+  "image": "https://proof-of-focus.vercel.app/badges/rookie.jpg",
+  "attributes": [
+    {
+      "trait_type": "Badge Level",
+      "value": "Rookie"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Sessions Required",
+      "value": 1
+    },
+    {
+      "trait_type": "Achievement Date",
+      "value": "2025-01-01"
+    }
+  ]
+}

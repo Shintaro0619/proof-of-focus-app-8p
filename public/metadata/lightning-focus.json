@@ -1,0 +1,23 @@
+{
+  "name": "Lightning Focus",
+  "description": "Awarded for completing 14 focus sessions. Your focus strikes like lightning!",
+  "image": "https://proof-of-focus.vercel.app/badges/lightning-focus.jpg",
+  "attributes": [
+    {
+      "trait_type": "Badge Level",
+      "value": "Lightning Focus"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Sessions Required",
+      "value": 14
+    },
+    {
+      "trait_type": "Achievement Date",
+      "value": "2025-01-01"
+    }
+  ]
+}

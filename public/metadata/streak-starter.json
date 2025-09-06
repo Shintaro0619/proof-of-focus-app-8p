@@ -1,0 +1,23 @@
+{
+  "name": "Streak Starter",
+  "description": "Awarded for completing 7 focus sessions. You're building momentum!",
+  "image": "https://proof-of-focus.vercel.app/badges/streak-starter.jpg",
+  "attributes": [
+    {
+      "trait_type": "Badge Level",
+      "value": "Streak Starter"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Sessions Required",
+      "value": 7
+    },
+    {
+      "trait_type": "Achievement Date",
+      "value": "2025-01-01"
+    }
+  ]
+}

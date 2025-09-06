@@ -1,0 +1,23 @@
+{
+  "name": "Diamond Mind",
+  "description": "Awarded for completing 21 focus sessions. Your mind is becoming unbreakable like a diamond.",
+  "image": "https://proof-of-focus.vercel.app/badges/diamond-mind.jpg",
+  "attributes": [
+    {
+      "trait_type": "Badge Level",
+      "value": "Diamond Mind"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Sessions Required",
+      "value": 21
+    },
+    {
+      "trait_type": "Achievement Date",
+      "value": "2025-01-01"
+    }
+  ]
+}
