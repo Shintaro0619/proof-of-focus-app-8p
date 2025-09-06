@@ -13,7 +13,7 @@ const nextConfig = {
     return [
       {
         source: '/.well-known/farcaster.json',
-        destination: 'https://api.farcaster.xyz/miniapps/hosted-manifest/YOUR_MANIFEST_ID_HERE',
+        destination: '/api/manifest',
         permanent: false,
       },
     ]
