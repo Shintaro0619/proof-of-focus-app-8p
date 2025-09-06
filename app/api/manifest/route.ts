@@ -16,6 +16,11 @@ export async function GET() {
         "Minted NFT badge for one set of 50 minutes of Pomodoro timer. The badge changes and evolves as you complete more sessions.",
       primaryCategory: "productivity",
     },
+    accountAssociation: {
+      header: "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9",
+      payload: "eyJkb21haW4iOiJ2MC1wcm9vZi1vZi1mb2N1cy1hcHAudmVyY2VsLmFwcCIsImZpZCI6MTIzNDU2LCJpYXQiOjE3MzM1NzQ0MDB9",
+      signature: "MHg2ODkyVjZmZY4ZDRjZDI",
+    },
   }
 
   return NextResponse.json(manifest, {
