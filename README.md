@@ -136,4 +136,4 @@ MIT License - see LICENSE file for details
 **Built with ❤️ for the Base ecosystem hackathon**
 \`\`\`
 
-```json file="" isHidden
+\`\`\`json file="" isHidden
