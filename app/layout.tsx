@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { Toaster } from "@/components/toaster"
+import { FarcasterMiniAppDetection } from "@/components/farcaster-manifest"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+        <FarcasterMiniAppDetection />
         <Suspense fallback={null}>{children}</Suspense>
         <Toaster />
         <Analytics />

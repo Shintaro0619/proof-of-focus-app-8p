@@ -12,6 +12,7 @@
     "@aws-sdk/client-lambda": "latest",
     "@aws-sdk/credential-providers": "latest",
     "@coinbase/wallet-mobile-sdk": "latest",
+    "@farcaster/miniapp-sdk": "latest",
     "@hookform/resolvers": "^3.10.0",
     "@mobile-wallet-protocol/client": "latest",
     "@radix-ui/react-accordion": "1.2.2",
