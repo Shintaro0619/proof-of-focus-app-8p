@@ -10,13 +10,13 @@ export function useSimpleWallet() {
     chainId: null,
     balance: null,
   })
-  const [isLoading, setIsLoading] = useState(false)
+  const [isConnecting, setIsConnecting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const web3 = SimpleWeb3.getInstance()
 
-  const connect = useCallback(async () => {
-    setIsLoading(true)
+  const connectWallet = useCallback(async () => {
+    setIsConnecting(true)
     setError(null)
 
     try {
@@ -25,7 +25,7 @@ export function useSimpleWallet() {
     } catch (err: any) {
       setError(err.message || "Failed to connect wallet")
     } finally {
-      setIsLoading(false)
+      setIsConnecting(false)
     }
   }, [web3])
 
@@ -36,6 +36,10 @@ export function useSimpleWallet() {
       chainId: null,
       balance: null,
     })
+  }, [])
+
+  const formatAddress = useCallback((address: string) => {
+    return `${address.slice(0, 6)}...${address.slice(-4)}`
   }, [])
 
   const refreshBalance = useCallback(async () => {
@@ -54,6 +58,7 @@ export function useSimpleWallet() {
     const checkConnection = async () => {
       if (typeof window !== "undefined" && window.ethereum) {
         try {
+          // Only check if already connected, don't trigger connection popup
           const accounts = await window.ethereum.request({
             method: "eth_accounts",
           })
@@ -82,10 +87,11 @@ export function useSimpleWallet() {
 
   return {
     ...walletState,
-    isLoading,
+    isConnecting,
     error,
-    connect,
+    connectWallet,
     disconnect,
     refreshBalance,
+    formatAddress,
   }
 }
